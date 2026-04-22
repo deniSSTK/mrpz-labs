@@ -1,8 +1,10 @@
+package lab1;
+
 import java.util.Random;
 
 public class MatrixLab {
     
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[][] matrixA = new int[2][3];
         Random random = new Random();
         
