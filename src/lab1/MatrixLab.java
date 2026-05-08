@@ -26,7 +26,10 @@ public class MatrixLab {
                 if (matrixA[i][j] < 0) {
                     negativeCount++;
                     negativeProduct *= matrixA[i][j];
-                    hasNegativeElements = true;
+
+                    if (!hasNegativeElements) {
+                        hasNegativeElements = true;
+                    }
                 }
             }
         }

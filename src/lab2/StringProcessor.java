@@ -42,7 +42,7 @@ public class StringProcessor {
         System.out.println("Original text:");
         System.out.println(multiLineText);
         System.out.println();
-        System.out.println("Longest sequence without letters: \"" + longestNonLetterSequence + "\"");
+        System.out.println("Longest sequence without letters: " + longestNonLetterSequence);
         System.out.println("Length: " + longestNonLetterSequence.length() + " characters");
         System.out.println("Input parameters: Multi-line text, find longest non-letter sequence");
         
@@ -56,7 +56,7 @@ public class StringProcessor {
         for (int i = 0; i < text.length(); i++) {
             char currentChar = text.charAt(i);
             
-            if (!Character.isLetter(currentChar)) {
+            if (!Character.isLetter(currentChar) && !Character.isWhitespace(currentChar)) {
                 currentSequence.append(currentChar);
             } else {
                 if (currentSequence.length() > longestSequence.length()) {
